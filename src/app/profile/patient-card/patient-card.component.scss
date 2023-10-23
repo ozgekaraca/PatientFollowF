@@ -1,0 +1,55 @@
+.patient-card {
+  margin: 30px;
+  margin-left:300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: transform 0.3s;
+  align-items: center;
+
+  &:hover {
+    transform: scale(1.05); /* Kart üzerine gelindiğinde büyütme efekti */
+  }
+
+  .card {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+
+  .panel-body {
+    display: flex;
+    align-items: center;
+  }
+
+  .bio-chart {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .bio-desk {
+    flex: 1;
+  }
+
+  h4 {
+    color: #333;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  p {
+    color: #777;
+    margin: 4px 0;
+    font-size: 14px;
+  }
+  button{
+   float: right;
+   border: 2px solid #3498db;
+   border-radius: 5px;
+
+  }
+}

@@ -1,0 +1,47 @@
+   <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <!-- <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com"></a>
+        <i class="bi bi-phone"></i>  -->
+      </div>
+      <!-- <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div> -->
+    </div>
+  </div>
+
+ 
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+    <h1 class="logo me-auto"><a href="/home">ÖzMedilab</a></h1>
+    
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a class="nav-link scrollto active" href="#hero">Anasayfa</a></li>
+        <li><a class="nav-link scrollto" href="#about">Hakkımızda</a></li>
+        <li><a class="nav-link scrollto" href="#footer">İletişim</a></li>
+        <li><a class="nav-link scrollto" href="#services">Branşlar</a></li>
+        <li><a class="nav-link scrollto" routerLink="/login">Giriş Yap</a></li>
+      </ul>
+    </nav>
+
+    <!-- Eklenen mobil menü düğmesi -->
+    <i class="bi bi-list mobile-nav-toggle" (click)="toggleMobileMenu()"></i>
+
+    <!-- Mobil menü içeriği -->
+    <div class="mobile-nav" *ngIf="isMobileMenuOpen">
+      <ul>
+        <li><a class="nav-link scrollto active" href="#hero">Anasayfa</a></li>
+        <li><a class="nav-link scrollto" href="#about">Hakkımızda</a></li>
+        <li><a class="nav-link scrollto" href="#footer">İletişim</a></li>
+        <li><a class="nav-link scrollto" href="#services">Branşlar</a></li>
+        <li><a class="nav-link scrollto" routerLink="/login">Giriş Yap</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+

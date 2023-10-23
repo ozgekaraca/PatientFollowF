@@ -1,0 +1,22 @@
+<app-profile-content></app-profile-content>
+
+<div class="row">
+  <div class="col-md-6" *ngFor="let prescription of prescriptions">
+    <div class="patient-card">
+      <div class="card">
+        <div class="panel-body">
+          <div class="bio-chart"></div>
+          <div class="bio-desk">
+            <h4 class="purple"></h4>
+            <h6>Reçete</h6>
+            <p>Reçete İçeriği: {{prescription.prescriptionText }}</p>
+          </div>
+        </div>
+         <div class="button-container">
+          <!-- <button (click)="editPrescription(prescription)">Düzenle</button> -->
+          <button (click)="deletePrescription(prescription.id)"><i class="fa-solid fa-trash fa-xs" style="color: #6e6e6e;"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

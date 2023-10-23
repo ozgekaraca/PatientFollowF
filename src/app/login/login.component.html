@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p-toast id="custom-toast"></p-toast>
+
+
+<div class="wrapper fadeInDown" >
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h2 class="active"> Giriş Yap </h2>
+
+    <!-- Login Form -->
+    <form>
+      <input type="text" id="userName" class="fadeIn second" placeholder="Kullanıcı Adı" required [(ngModel)]="loginRequest.userName" name="userName">
+
+      <input type="password" id="password" class="fadeIn third" placeholder="Şifre" required [(ngModel)]="loginRequest.password" name="password">
+
+      <button type="submit" class="fadeIn fourth" (click)="login()"> Giriş Yap </button>
+    </form>
+  </div>
+</div>

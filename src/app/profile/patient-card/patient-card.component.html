@@ -1,0 +1,22 @@
+<app-profile-content></app-profile-content>
+
+<div class="row">
+  <div class="col-md-6" *ngFor="let patient of patients">
+    <div class="patient-card">
+      <div class="card">
+        <div class="panel-body">
+          <div class="bio-chart"></div>
+          <div class="bio-desk">
+            <h4 class="purple"></h4>
+            <p>Hasta Adı: {{ patient.firstName }}</p>
+            <p>Hasta Soyadı: {{ patient.lastName }}</p>
+            <p>Hasta Yaşı: {{ patient.age }}</p>
+          </div>
+        </div>
+        <div class="button-container">
+          <button (click)="deletePatient(patient.id)"><i class="fa-solid fa-trash fa-xs" style="color: #6e6e6e;"></i></button> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
